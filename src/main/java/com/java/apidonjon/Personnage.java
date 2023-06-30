@@ -1,7 +1,11 @@
 package com.java.apidonjon;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
+@Entity
 public class Personnage {
+    @Id
     private long id;
     private String nom;
     private String type;
