@@ -1,11 +1,14 @@
 package com.java.apidonjon;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
 public class Personnage {
     @Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
     private long id;
     private String nom;
     private String type;
@@ -53,7 +56,6 @@ public class Personnage {
     public void setPointsDeVie(int pointsDeVie) {
         this.pointsDeVie = pointsDeVie;
     }
-
 
 
 

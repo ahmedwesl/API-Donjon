@@ -1,1 +1,0 @@
-INSERT INTO personnage VALUES (1, ' Jean', 'Guerrier, 10')
